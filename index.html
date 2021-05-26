@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form(FCC)</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div>
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="text-center"> Provide Us Contact Information</p>
+    </div>
+    
+    <div id="container" class="container">
+        <form id="survey-form" class="" action="GET">
+            <div id="name-container" class="form-item">
+                <label for="name" id="name-label" class="">Name:</label>
+                <input type="text" id="name" class="" placeholder="Enter Name Here" value="" required>
+                
+            </div>
+
+            <div id="email-container" class="form-item">
+                <label for="email" id="email-label" class="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email Here" value="" required>
+                
+            </div>
+
+            <div id="number-container" class="form-item">
+                <label for="number" id="number-label" class="">Age:</label>
+                <input type="number" name="number" id="number" placeholder="Enter Age Here"  min="18" max="100">
+                
+            </div>
+
+            <div id="dropdown-container" class="form-item">
+                <label for="color" id="dropdown-label" class="">Select Color:</label>
+                    <select id="dropdown" name="color" class="">
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="pink">pink</option>
+                    </select>
+                
+            </div>
+
+            <div id="radio-container" class="form-item2">
+                <label for="gender" id="gender-label" class="other-label">Gender:</label>
+
+                <label for="male" id="male-label" class="">
+                    <input type="radio" name="gender" id="male" class=""value="male"> Male
+                </label>
+
+                <label for="female" id="female-label" class="">
+                    <input type="radio" name="gender" id="female" class="" value="female"> Female
+                </label>
+
+            </div>
+
+            <div id="checkbox-container" class="form-item2">
+                <label for="fruit-title" id="fruit-title" class="other-label"> Choose The Fruits You Like:</label>
+
+                <label for="apple" id="apple-label" class="">
+                    <input type="checkbox" name="apple" id="apple" value="apple"> Apple
+                </label>
+
+                <label for="pear" id="pear-label" class="">
+                    <input type="checkbox" name="pear" id="pear" value="pear"> Pear
+                </label>
+
+                <label for="orange" id="orange-label" class="">
+                    <input type="checkbox" name="orange" id="orange" value="orange"> Orange
+                </label>
+
+                <label for="grape" id="grape" class="">
+                    <input type="checkbox" name="grape" id="grape" value="grape"> Grape
+                </label>
+            </div>
+
+            <div id="text-area-container" class="form-item">
+                <textarea name="text" id="comment-area" cols="30" rows="10" placeholder="Additional Information Enter Here:" class=""></textarea>
+            </div>
+            
+            <div id="button-container" class="form-item">
+                <button type="submit" id="submit" class="">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

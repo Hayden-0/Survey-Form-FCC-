@@ -1,0 +1,54 @@
+.text-center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.form-item2 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.form-item input {
+    border-radius: 3px;
+    border: solid 2px black;
+    height: 25px;
+}
+
+.form-item select {
+    border-radius: 3px;
+    border: solid 2px black;
+    height: 25px;
+}
+
+.form-item label {
+    font-weight:bolder;
+}
+
+.other-label {
+    font-weight:bolder
+}
+
+form {
+    border: solid 4px black;
+    border-radius: 4px;
+    
+}
+
